@@ -28,8 +28,12 @@ collections {
             type: RECT;
             description {
                state: "default" 0.0;
-               rel1.relative: 0.0 0.10;
-               rel2.relative: 0.12 0.85;
+               rel1.to: "part.web";
+               rel1.relative: 0 1.0;
+               rel1.offset: 0 0;
+               rel2.to: "part.web";
+               rel2.relative: 0.25 1.2;
+               rel2.offset: 0 0;
                color_class: "color_transparent";
             }
             description {
@@ -60,8 +64,12 @@ collections {
             type: RECT;
             description {
                state: "default" 0.0;
-               rel1.relative: 0.88 0.10;
-               rel2.relative: 1.0 0.85;
+               rel1.to: "part.web";
+               rel1.relative: 0.75 1.0;
+               rel1.offset: 0 0;
+               rel2.to: "part.web";
+               rel2.relative: 1.0 1.2;
+               rel2.offset: 0 0;
                color_class: "color_transparent";
             }
             description {
@@ -93,7 +101,7 @@ collections {
             description {
                state: "default" 0.0;
                rel1.to: "part.web";
-               rel1.relative: 0.05 1.0;
+               rel1.relative: 0.25 1.0;
                rel1.offset: 0 0;
                rel2.to: "part.web";
                rel2.relative: 0.5 1.2;
@@ -114,7 +122,6 @@ collections {
                state: "default" 0.0;
                image.normal: "ic_search_white_24dp_2x.png";
                rel1.to: "part.web.btn.search";
-               rel1.relative: 0.4 0;
                rel2.to: "part.web.btn.search";
                max: 35 35;
             }
@@ -125,10 +132,10 @@ collections {
             description {
                state: "default" 0.0;
                rel1.to: "part.web";
-               rel1.relative: 0.5 1.0;
+               rel1.relative: 0.50 1.0;
                rel1.offset: 0 0;
                rel2.to: "part.web";
-               rel2.relative: 1.0 1.2;
+               rel2.relative: 0.75 1.2;
                rel2.offset: 0 0;
                color_class: "color_transparent";
             }
@@ -146,25 +153,8 @@ collections {
                state: "default" 0.0;
                image.normal: "ic_bookmark_white_24dp_2x.png";
                rel1.to: "part.web.btn.bookmark";
-               rel1.relative: -0.4 0;
                rel2.to: "part.web.btn.bookmark";
                max: 35 35;
-            }
-         }
-         part {
-            name: "part.web.btn.app.icon";
-            type: IMAGE;
-            mouse_events: 0;
-            description {
-               state: "default" 0.0;
-               image.normal: "ic_gear_browser_117x117.png";
-               rel1.to: "part.web";
-               rel1.relative: 0.5 0;
-               rel2.to: "part.web";
-               rel1.offset: 0 -26;
-               rel2.relative: 0.5 0;
-               rel2.offset: 0 -26;
-               min: 28 28;
             }
          }
          part {
@@ -172,8 +162,8 @@ collections {
             type: SWALLOW;
             description {
                state: "default" 0.0;
-               rel1.relative: 0.12 0.12;
-               rel2.relative: 0.88 0.85;
+               rel1.relative: 0 0;
+               rel2.relative: 1 0.85;
             }
             description { 
                state: "half" 0.0;

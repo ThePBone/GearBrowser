@@ -195,9 +195,9 @@ create_genlist(Evas_Object *parent, Eext_Circle_Surface *surface) {
 	Evas_Object *genlist = elm_genlist_add(parent);
 	elm_genlist_mode_set(genlist, ELM_LIST_COMPRESS);
 
-	Evas_Object *circleGenlist = eext_circle_object_genlist_add(genlist, surface);
-	eext_circle_object_genlist_scroller_policy_set(circleGenlist, ELM_SCROLLER_POLICY_OFF, ELM_SCROLLER_POLICY_AUTO);
-	eext_rotary_object_event_activated_set(circleGenlist, EINA_TRUE);
+	//Evas_Object *circleGenlist = eext_circle_object_genlist_add(genlist, surface);
+	//eext_circle_object_genlist_scroller_policy_set(circleGenlist, ELM_SCROLLER_POLICY_OFF, ELM_SCROLLER_POLICY_AUTO);
+	//eext_rotary_object_event_activated_set(circleGenlist, EINA_TRUE);
 
 	return genlist;
 }
@@ -216,7 +216,8 @@ create_empty_layout(Evas_Object *parent) {
 	Evas_Object *layout = elm_layout_add(parent);
 	elm_layout_theme_set(layout, "layout", "nocontents", "default");
 
-	const char *img_path = app_get_resource_n("image/ic_bookmark_white_48dp.png");
+	const char *img_path = app_get_resource_n(
+			"image/ic_bookmark_white_48dp.png");
 
 	Evas_Object *img = elm_image_add(parent);
 	elm_image_file_set(img, img_path, NULL);
