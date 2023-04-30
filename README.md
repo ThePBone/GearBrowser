@@ -1,5 +1,5 @@
 # Gear Browser
-Enjoy web surfing via Gear S2!
+Enjoy web surfing via ~Gear S2~ Gear Fit 2 Pro! Forked from https://github.com/fin10/GearBrowser.
 
 ## Features
 - Web browsing
